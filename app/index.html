@@ -25,7 +25,7 @@
 				</tr>
 			</thead>	
 			<tbody>
-				<tr ng-repeat="x in views | filter:searchOne | filter:searchTwo  | orderBy: title : desc">
+				<tr ng-repeat="x in views | filter:search:one | filter:searchs:two | orderBy: title : desc">
 					<td>{{x.firstname}}</td>
 					<td>{{x.lastname}}</td>
 					<td>{{x.gender}}</td>

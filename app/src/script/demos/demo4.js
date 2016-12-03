@@ -31,7 +31,8 @@ angular.module("myApp",[])
 		}
 
 	]
-
+	$scope.searchOne="";
+	$scope.searchTwo="";
 	$scope.views = views;
 	$scope.title = 'firstname';  
     $scope.desc = 0;  
@@ -42,6 +43,28 @@ angular.module("myApp",[])
 	$scope.b4 = false; 
 	$scope.b5 = false; 
 	$scope.b6 = false; 
+	$scope.search = function(obj){
+		if($scope.searchOne!=""){
+			if(obj.firstname.toLowerCase().indexOf($scope.searchOne.toLowerCase()) != -1){
+				return true;
+			}else{
+				return false;
+			}
+		}else{
+			return true;
+		}
+	}
+	$scope.searchs = function(obj){
+		if($scope.searchTwo!=""){
+			if(obj.lastname.toLowerCase().indexOf($scope.searchTwo.toLowerCase()) != -1){
+				return true;
+			}else{
+				return false;
+			}
+		}else{
+			return true;
+		}
+	}
 	$scope.add = function(){
 		$scope.a=true;
 		$scope.c=false;
