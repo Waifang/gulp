@@ -1,0 +1,81 @@
+@import "./commom/reset.scss";
+body{
+	background:$bg;
+	color:$text;
+}
+.title{
+	color:#f00;
+}
+.enable{
+	color:#f00;
+}
+.disable{
+	color:#666;
+	text-decoration: line-through;
+}
+.search{
+	padding:10px;
+	input{
+		width: 300px;
+		height: 25px;
+		line-height: 25px;
+		padding: 10px;
+		font-size:18px;
+	}
+	table{
+		margin-top: 60px;
+		width: 100%;
+		border-collapse: collapse;
+		thead{
+			td{
+				font-weight: bold;
+				font-size: 18px;
+			}
+		}
+	 	td{
+	 		border:1px solid #f00;
+	 		text-align: center;
+	 		padding: 5px 3px;
+	 	}
+	}
+}
+.cont{
+	padding:10px;
+	input{
+		margin-right:3px;
+	}
+	table{
+		margin-top: 60px;
+		width: 100%;
+		border-collapse: collapse;
+		thead{
+			td{
+				font-weight: bold;
+				font-size: 18px;
+			}
+		}
+	 	td{
+	 		border:1px solid #f00;
+	 		text-align: center;
+	 		padding: 5px 3px;
+	 		
+	 	}
+	}
+}
+.up {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom: 14px solid #000;
+    display: inline-block;
+
+}
+.down{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 14px solid #000;
+    display: inline-block;
+}
